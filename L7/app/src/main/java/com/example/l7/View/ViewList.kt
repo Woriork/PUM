@@ -20,7 +20,7 @@ fun ViewList(viewModel: UserViewModel, navController: NavController) {
     LazyColumn(modifier = Modifier.fillMaxSize().padding(8.dp)) {
         items(users) { user ->
             Text(
-                text = "${user.firstName} ${user.lastName}",
+                text = "${user.index} ${user.firstName} ${user.lastName}",
                 fontSize = 20.sp,
                 textAlign = TextAlign.Start,
                 modifier = Modifier
